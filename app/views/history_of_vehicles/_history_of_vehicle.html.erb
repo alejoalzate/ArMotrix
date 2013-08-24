@@ -1,0 +1,14 @@
+<tr id=<%= "history_of_vehicle_#{history_of_vehicle.id}" %>>
+<td><%= link_to history_of_vehicle.id, edit_history_of_vehicle_path(history_of_vehicle), :remote => true %></td>
+<td><%= history_of_vehicle.plate %></td>
+<td><%= history_of_vehicle.customer %></td>
+<td><%= history_of_vehicle.date %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Historial de vehiculos"), history_of_vehicle, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Historial de vehiculos"),  edit_history_of_vehicle_path(history_of_vehicle), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Historial de vehiculos"),  history_of_vehicle,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

@@ -1,0 +1,46 @@
+rails g scaffold document name:string acronym:string -skip--stylesheets
+
+rails g scaffold profile name:string  acronym:string description:string -skip--stylesheets
+
+rails g scaffold user document:references number_document:string name:string surname:string password:string confirm_password:string state:boolean profile:references -skip--stylesheets
+
+rails g scaffold customer document:references number_document:string name:string phone:string cell_phone:string address:string email:string state:boolean credit_quota:string restricted_quota:string space_available:string -skip--stylesheets
+
+
+
+
+rails g scaffold account_payable social_reason:string nit:string from:date to:date -skip--stylesheets
+
+
+rails g scaffold account_receivable  name:string identification:string from:date to:date -skip--stylesheets
+
+rails g scaffold history_of_vehicle  plate:string  customer:string date:date -skip--stylesheets
+
+rails g scaffold sale_by_cost_center from:date to:date cost_center:references -skip--stylesheets
+
+rails g scaffold cost_center cost_center:string code:string state:boolean -skip--stylesheets
+
+rails g scaffold mechanical document:references name:string surname:string work:string type:boolean state:boolean -skip--stylesheets
+
+rails g scaffold work_order document:references address:string plate:string phone:string movil:string brand:string date_received:date type:string delivery_date:date model:string color:string mileage:string expiration_date:date vehicle:string diamond:string state:boolean inventory:references total_labor:string parts_total_value:string client_feedback:text -skip--stylesheets
+
+rails g scaffold labor description:text cost_center:references sale_price:string quantity:string mechanical:references iva:string discount:string -skip--stylesheets
+
+rails g scaffold spare description:text cost_center:references  purchase_price:string selling_price:string quantity:string iva:string -skip--stylesheets
+
+
+
+
+rails g scaffold supplier document:references social_reason:string phone_one:string phone_two:string address:string email:string state:boolean -skip--stylesheets
+
+
+
+
+rails g scaffold shopping supplier:string date:date state:boolean vendor_invoice:string concept:text value:string quantity:string iva:string discount:string -skip--stylesheets
+
+rails g scaffold cash_receipt date:date observations:text state:boolean retention:string  customer:string concept:string movement_number:string value:string payment:references bank_origin:references destination_bank:references -skip--stylesheets
+
+rails g scaffold bank name:string acronym:string address:string phone:string description:text -skip--stylesheets
+
+rails g scaffold form_of_payment name:string acronym:string -skip--stylesheets
+

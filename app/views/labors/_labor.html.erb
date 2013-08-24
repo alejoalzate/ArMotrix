@@ -1,0 +1,17 @@
+<tr id=<%= "labor_#{labor.id}" %>>
+<td><%= link_to labor.id, edit_labor_path(labor), :remote => true %></td>
+<td><%= labor.description %></td>
+<td><%= labor.cost_center_id %></td>
+<td><%= labor.sale_price %></td>
+<td><%= labor.mechanical_id %></td>
+<td><%= labor.iva %></td>
+<td><%= labor.discount %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Labor"), labor, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Labor"),  edit_labor_path(labor), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Labor"),  labor,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

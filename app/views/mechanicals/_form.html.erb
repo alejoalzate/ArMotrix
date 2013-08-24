@@ -1,0 +1,16 @@
+<%= simple_form_for(@mechanical, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @mechanical %>
+
+  <%= f.input :document_id %>
+  <%= f.input :name %>
+  <%= f.input :surname %>
+  <%= f.input :work %>
+  <%= f.input :type %>
+  <%= f.input :state %>
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', mechanicals_path, :class => 'btn btn-small' %>
+</div>
+<% end %>

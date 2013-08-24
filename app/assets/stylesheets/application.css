@@ -1,0 +1,183 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require lazybox
+ *= require_tree .
+*/
+ 
+.content {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/*
+.usuario {
+  margin-top: 10px;
+  margin-left: 785px;
+  color: #000000;
+  background-color: white;
+  border-radius: 4px 4px 4px 4px;
+}
+
+
+p:hover{
+  text-decoration: underline;
+  background-color: gray;
+}
+*/
+
+.sesion{
+  margin-left: -10px;
+}
+
+.editar{
+  margin-left: 940px;
+  background-color: #585858;
+  margin-top: -38px;
+    /*para Firefox*/
+-moz-border-radius: 8px 8px 8px 8px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 8px 8px 8px 8px;
+/* para Opera */
+border-radius: 8px 8px 8px 8px;
+}
+
+.sesion{
+  margin-left: 1050px;
+  background-color: #585858;
+  margin-top: -40px;
+    /*para Firefox*/
+-moz-border-radius: 8px 8px 8px 8px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 8px 8px 8px 8px;
+/* para Opera */
+border-radius: 8px 8px 8px 8px;
+}
+
+.home{
+  color: black;
+}
+
+.titulo{
+  text-align: center;
+  font-family: serif;
+}
+
+.iniciar{
+  color: white;
+}
+
+hr {
+background-color:gray;
+height:2px;
+width:100%;
+
+}
+
+.userlogin{
+  margin-top: 15px;
+  margin-left: 1050px;
+  color:#0F0;
+  text-shadow:
+  1px 1px 1px #000,
+  0 0 10px #FFF,
+  0 0 20px #FFF,
+  0 0 30px #FFF,
+  0 0 40px #FFde00,
+  0 0 70px #FFde00,
+  0 0 80px #FFde00,
+  0 0 100px #FFde00,
+  0 0 150px #FFde00;
+}
+
+.clientes{
+  margin-left: 100px;
+  margin-top:  -38px;
+    background-color: #2E2E2E;
+  /*para Firefox*/
+-moz-border-radius: 8px 8px 8px 8px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 8px 8px 8px 8px;
+/* para Opera */
+border-radius: 8px 8px 8px 8px;
+}
+
+.documents{
+  margin-top: -38px;
+  background-color: #2E2E2E;
+  /*para Firefox*/
+-moz-border-radius: 8px 8px 8px 8px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 8px 8px 8px 8px;
+/* para Opera */
+border-radius: 8px 8px 8px 8px;
+}
+
+
+
+#lazybox div.customer { max-width: 500px; }
+#lazybox div.document { max-width: 500px; }
+.lazybox {
+background: transparent !important;
+}
+#lazybox_close.img {
+background: url('close.png') no-repeat;
+width: 25px;
+height: 25px;
+top: -17px;
+right: -17px;
+}
+#lazybox.sticker {
+-webkit-border-bottom-left-radius: 20px 500px;
+-webkit-border-bottom-right-radius: 500px 30px;
+-webkit-border-top-right-radius: 5px 100px;
+-moz-border-radius-bottomleft: 20px 500px;
+-moz-border-radius-bottomright: 500px 30px;
+-moz-border-radius-topright: 5px 100px;
+border-radius-bottomleft: 20px 500px;
+border-radius-bottomright: 500px 30px;
+border-radius-topright: 5px 100px;
+border-bottom-left-radius: 20px 500px;
+border-bottom-right-radius: 500px 30px;
+border-top-right-radius: 5px 100px;
+}
+#lazybox.top {
+border-radius: 0px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border: none;
+}
+#lazybox.player {
+background: transparent;
+border: none;
+box-shadow: none;
+}
+
+.header{
+  margin-top: 25px;
+}
+
+
+input#totalregs{
+  box-shadow: 0 0 5px rgba(97,97,97,0.78); 
+  padding: 3px 0px -3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(97,97,97,0.78);
+}
+
+-

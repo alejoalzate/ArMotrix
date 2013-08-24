@@ -1,0 +1,15 @@
+<tr id=<%= "account_receivable_#{account_receivable.id}" %>>
+<td><%= link_to account_receivable.id, edit_account_receivable_path(account_receivable), :remote => true %></td>
+<td><%= account_receivable.name %></td>
+<td><%= account_receivable.identification %></td>
+<td><%= account_receivable.from %></td>
+<td><%= account_receivable.to %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Cuenta"), account_receivable, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Cuenta"), edit_account_receivable_path(account_receivable), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Cuenta"), account_receivable,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

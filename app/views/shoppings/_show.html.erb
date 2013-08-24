@@ -1,0 +1,16 @@
+<%- model_class = Shopping -%>
+<div class="page-header">
+<h1>Compra</h1>
+</div>
+<div class='shopping'>
+<p><b>Numero</b>: <%= @shopping.id %></p>
+<p><b>Proveedor</b>: <%= @shopping.supplier %></p>
+<p><b>Fecha</b>: <%= @shopping.date %></p>
+<p><b>Estado</b>: <%= @shopping.state %></p>
+<p><b>Factura del proveedor</b>: <%= @shopping.vendor_invoice %></p>
+<p><b>Concepto</b>: <%= @shopping.concept %></p>
+<p><b>Valor</b>: <%= @shopping.value %></p>
+<p><b>Cantidad</b>: <%= @shopping.quantity %></p>
+<p><b>Iva</b>: <%= @shopping.iva %></p>
+<p><b>Descuento</b>: <%= @shopping.discount %></p>
+</div>

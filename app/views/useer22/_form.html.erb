@@ -1,0 +1,15 @@
+<%= simple_form_for(@user, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+<%= f.error_notification %>
+<%= display_base_errors @user %>
+
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+
+<div class="form-actions">
+<%= f.submit "guardar", :class => 'btn btn-primary' %>
+<%= link_to 'Atras', users_path, :class => 'btn btn-small' %>
+</div>
+<% end %>

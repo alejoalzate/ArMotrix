@@ -1,0 +1,12 @@
+<%= simple_form_for(@form_of_payment, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @form_of_payment %>
+
+  <%= f.input :name %>
+  <%= f.input :acronym %>
+  <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+      <%= link_to 'Atras', form_of_payments_path, :class => 'btn btn-small' %>
+  </div>
+<% end %>

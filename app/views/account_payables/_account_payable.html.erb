@@ -1,0 +1,16 @@
+<tr id=<%= "account_payable_#{account_payable.id}" %>>
+<td><%= link_to account_payable.id, edit_account_payable_path(account_payable), :remote => true %></td>
+<td><%= account_payable.id %></td>
+<td><%= account_payable.social_reason %></td>
+<td><%= account_payable.nit %></td>
+<td><%= account_payable.from %></td>
+<td><%= account_payable.to %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Cuenta"), account_payable, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Cuenta"), edit_account_payable_path(account_payable), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Cuenta"), account_payable,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

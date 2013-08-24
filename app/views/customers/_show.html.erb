@@ -1,0 +1,17 @@
+<%- model_class = Customer -%>
+<div class="page-header">
+<h1>Cliente # <%= @customer.id %></h1>
+</div>
+<div class='customer'>
+<p><b>Documento</b>:<%= @customer.document.name %></p>
+<p><b>Numero Documento</b>:<%= @customer.number_document %></p>
+<p><b>Nombre</b>:<%= @customer.name %></p>
+<p><b>Telefono</b>:<%= @customer.phone %></p>
+<p><b>Celular</b>:<%= @customer.cell_phone %></p>
+<p><b>Direccion</b>:<%= @customer.address %></p>
+<p><b>Email</b>:<%= @customer.email %></p>
+<p><b>Estado</b>:<%= @customer.state %></p>
+<p><b>Cupo Credito</b>:<%= @customer.credit_quota %></p>
+<p><b>Cupo Restringido</b>:<%= @customer.restricted_quota %></p>
+<p><b>Cupo Disponible</b>:<%= @customer.space_available %></p>
+</div>

@@ -1,0 +1,13 @@
+<tr id=<%= "document_#{document.id}" %>>
+	<td><%= link_to document.id, edit_document_path(document), :remote => true %></td>
+	<td><%= document.name %></td>
+	<td><%= document.acronym %></td>
+	<td>
+		<%= link_to image_tag('shows.png', :title  => "Mostrar Documento"), document, :remote => true, :class => 'btn btn-mini' %>
+		<%= link_to image_tag('editar.png', :title  => "Editar Documento"), edit_document_path(document), :remote => true,
+		:class => 'btn btn-mini' %>
+		<%= link_to image_tag('deletes.png', :title  => "Eliminar Documento"), document,
+		:data => { :confirm => 'Esta Seguro?' },
+		:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+	</td>
+</tr>

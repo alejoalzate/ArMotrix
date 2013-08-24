@@ -1,0 +1,16 @@
+<tr id=<%= "bank_#{bank.id}" %>>
+<td><%= link_to bank.id, edit_bank_path(bank), :remote => true %></td>
+<td><%= bank.name %></td>
+<td><%= bank.acronym %></td>
+<td><%= bank.address %></td>
+<td><%= bank.phone %></td>
+<td><%= bank.description %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Banco"), bank, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Mostrar Cuenta"), edit_bank_path(bank), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Mostrar Cuenta"), bank,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

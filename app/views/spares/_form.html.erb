@@ -1,0 +1,17 @@
+<%= simple_form_for(@spare, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @spare %>
+
+  <%= f.input :description %>
+  <%= f.input :cost_center_id %>
+  <%= f.input :purchase_price %>
+  <%= f.input :selling_price %>
+  <%= f.input :quantity %>
+  <%= f.input :iva %>
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', spares_path, :class => 'btn btn-small' %>
+  </div>
+<% end %>
+

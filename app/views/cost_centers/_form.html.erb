@@ -1,0 +1,16 @@
+<%= simple_form_for(@cost_center, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+
+	<%= f.error_notification %>
+	<%= display_base_errors @cost_center %>
+
+  <%= f.input :cost_center %>
+  <%= f.input :code %>
+  <%= f.input :state %>
+  
+	<div class="form-actions">
+		<%= f.submit "guardar", :class => 'btn btn-primary' %>
+		<%= link_to 'Atras', cost_centers_path, :class => 'btn btn-small' %>
+</div>
+<% end %>
+

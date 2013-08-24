@@ -1,0 +1,22 @@
+<tr id=<%= "cash_receipt_#{cash_receipt.id}" %>>
+<td><%= link_to cash_receipt.id, edit_cash_receipt_path(cash_receipt), :remote => true %></td>
+<td><%= cash_receipt.date %></td>
+<td><%= cash_receipt.observations %></td>
+<td><%= cash_receipt.state %></td>
+<td><%= cash_receipt.retention %></td>
+<td><%= cash_receipt.customer %></td>
+<td><%= cash_receipt.concept %></td>
+<td><%= cash_receipt.movement_number %></td>
+<td><%= cash_receipt.value %></td>
+<td><%= cash_receipt.payment_id %></td>
+<td><%= cash_receipt.bank_origin_id %></td>
+<td><%= cash_receipt.destination_bank_id %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Cobro"), cash_receipt, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Cobro"), edit_cash_receipt_path(cash_receipt), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Cobro"), cash_receipt,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

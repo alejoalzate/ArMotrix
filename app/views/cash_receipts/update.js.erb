@@ -1,0 +1,2 @@
+$('tr#cash_receipt_<%= @cash_receipt.id %>').replaceWith("<%= escape_javascript(render @cash_receipt) %>")
+$.lazybox.close()

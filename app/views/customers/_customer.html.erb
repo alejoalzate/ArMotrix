@@ -1,0 +1,18 @@
+<tr id=<%= "customer_#{customer.id}" %>>
+	<td><%= link_to customer.id, edit_customer_path(customer), :remote => true %></td>
+	<td><%= customer.document.name %></td>
+	<td><%= customer.number_document %></td>
+	<td><%= customer.name %></td>
+	<td><%= customer.phone %></td>
+	<td><%= customer.address %></td>
+	<td><%= customer.email %></td>
+	<td><%= customer.state %></td>
+	<td>
+		<%= link_to image_tag('shows.png', :title  => "Mostrar Clientes"), customer, :remote => true, :class => 'btn btn-mini' %>
+		<%= link_to image_tag('editar.png', :title  => "Editar Clientes"),  edit_customer_path(customer), :remote => true,
+		:class => 'btn btn-mini' %>
+		<%= link_to image_tag('deletes.png', :title  => "Eliminar Clientes"), customer,
+		:data => { :confirm => 'Esta Seguro?' },
+		:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+	</td>
+</tr>

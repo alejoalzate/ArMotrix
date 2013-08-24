@@ -1,0 +1,16 @@
+<%= simple_form_for(@account_payable, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+	<%= f.error_notification %>
+	<%= display_base_errors @account_payable %>
+
+
+  <%= f.input :social_reason %>
+  <%= f.input :nit %>
+  <%= f.input :from %>
+  <%= f.input :to %>
+<div class="form-actions">
+	<%= f.submit "guardar", :class => 'btn btn-primary' %>
+	<%= link_to 'Atras', account_payables_path, :class => 'btn btn-small' %>
+</div>
+<% end %>
+

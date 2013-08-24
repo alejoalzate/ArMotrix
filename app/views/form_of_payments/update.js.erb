@@ -1,0 +1,2 @@
+$('tr#form_of_payment_<%= @form_of_payment.id %>').replaceWith("<%= escape_javascript(render @form_of_payment) %>")
+$.lazybox.close()

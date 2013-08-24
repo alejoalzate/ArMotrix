@@ -1,0 +1,18 @@
+<%- model_class = CashReceipt -%>
+<div class="page-header">
+<h1>Cobros</h1>
+</div>
+<div class='cash_receipt'>
+<p><b>Numero</b>: <%= @cash_receipt.id %></p>
+<p><b>Fecha</b>: <%= @cash_receipt.date %></p>
+<p><b>Observaciones</b>: <%= @cash_receipt.observations %></p>
+<p><b>Estado</b>: <%= @cash_receipt.state %></p>
+<p><b>Retencion</b>: <%= @cash_receipt.retention %></p>
+<p><b>Cliente</b>: <%= @cash_receipt.customer %></p>
+<p><b>Concepto</b>: <%= @cash_receipt.concept %></p>
+<p><b>Numero Movimiento</b>: <%= @cash_receipt.movement_number %></p>
+<p><b>Valor</b>: <%= @cash_receipt.value %></p>
+<p><b>Pago</b>: <%= @cash_receipt.payment_id %></p>
+<p><b>Banco Origen</b>: <%= @cash_receipt.bank_origin_id %></p>
+<p><b>Banco Destino</b>: <%= @cash_receipt.destination_bank_id %></p>
+</div>

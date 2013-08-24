@@ -1,0 +1,13 @@
+<tr id=<%= "profile_#{profile.id}" %>>
+<td><%= link_to profile.id, edit_profile_path(profile), :remote => true %></td>
+<td><%= profile.name %></td>
+<td><%= profile.description %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Perfil"), profile, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Perfil"), edit_profile_path(profile), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to  image_tag('deletes.png', :title  => "Eliminar Perfil"), profile,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

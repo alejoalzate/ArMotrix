@@ -1,0 +1,13 @@
+<tr id=<%= "form_of_payment_#{form_of_payment.id}" %>>
+<td><%= link_to form_of_payment.id, edit_form_of_payment_path(form_of_payment), :remote => true %></td>
+<td><%= form_of_payment.name %></td>
+<td><%= form_of_payment.acronym %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Forma de pago"),  form_of_payment, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Forma de pago"),  edit_form_of_payment_path(form_of_payment), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Forma de pago"),  form_of_payment,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

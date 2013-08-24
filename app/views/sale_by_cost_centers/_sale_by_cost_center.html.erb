@@ -1,0 +1,14 @@
+<tr id=<%= "sale_by_cost_center_#{sale_by_cost_center.id}" %>>
+<td><%= link_to sale_by_cost_center.id, edit_sale_by_cost_center_path(sale_by_cost_center), :remote => true %></td>
+<td><%= sale_by_cost_center.from %></td>
+<td><%= sale_by_cost_center.to %></td>
+<td><%= sale_by_cost_center.cost_center_id %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Ventas por centro de costos"), sale_by_cost_center, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Ventas por centro de costos"), edit_sale_by_cost_center_path(sale_by_cost_center), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Ventas por centro de costos"), sale_by_cost_center,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

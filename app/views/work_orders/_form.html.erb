@@ -1,0 +1,31 @@
+<%= simple_form_for(@work_order, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @work_order %>
+
+
+  <%= f.input :document_id %>
+  <%= f.input :address %>
+  <%= f.input :plate %>
+  <%= f.input :phone %>
+  <%= f.input :movil %>
+  <%= f.input :brand %>
+  <%= f.input :date_received %>
+  <%= f.input :type %>
+  <%= f.input :delivery_date %>
+  <%= f.input :model %>
+  <%= f.input :color %>
+  <%= f.input :mileage %>
+  <%= f.input :expiration_date %>
+  <%= f.input :vehicle %>
+  <%= f.input :diamond %>
+  <%= f.input :state %>
+  <%= f.input :inventory_id %>
+  <%= f.input :total_labor %>
+  <%= f.input :parts_total_value %>
+  <%= f.input :client_feedback %>
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', work_orders_path, :class => 'btn btn-small' %>
+  </div>
+<% end %>

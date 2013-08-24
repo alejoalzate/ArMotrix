@@ -1,0 +1,25 @@
+<br><br>
+<%= simple_form_for(@customer, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+
+  <%= f.error_notification %>
+<%= display_base_errors @customer %>
+
+
+    <%= f.association :document %>
+    <%= f.input :number_document %>
+    <%= f.input :name %>
+    <%= f.input :phone %>
+    <%= f.input :cell_phone %>
+    <%= f.input :address %>
+    <%= f.input :email %>
+    <%= f.input :state %>
+    <%= f.input :credit_quota %>
+    <%= f.input :restricted_quota %>
+    <%= f.input :space_available %>
+
+<div class="form-actions">
+<%= f.submit "guardar", :class => 'btn btn-primary' %>
+<%= link_to 'Atras', customers_path, :class => 'btn btn-small' %>
+</div>
+<% end %>

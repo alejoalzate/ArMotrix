@@ -1,0 +1,2 @@
+module HistoryOfVehiclesHelper
+end

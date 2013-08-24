@@ -1,0 +1,11 @@
+<%- model_class = AccountPayable -%>
+<div class="page-header">
+<h1>Cuenta por pagar</h1>
+</div>
+<div class='account_payable'>
+<p><b>Numero</b>: <%= @account_payable.id %></p>
+<p><b>razon social</b>: <%= @account_payable.social_reason %></p>
+<p><b>nit</b>: <%= @account_payable.nit %></p>
+<p><b>desde</b>: <%= @account_payable.from %></p>
+<p><b>hasta</b>: <%= @account_payable.to %></p>
+</div>

@@ -1,0 +1,13 @@
+<%- model_class = Spare -%>
+<div class="page-header">
+<h1>Repuesto</h1>
+</div>
+<div class='spare'>
+<p><b>Numero</b>: <%= @spare.id %></p>
+<p><b>Descripción</b>: <%= @spare.description %></p>
+<p><b>Centro De Costo</b>: <%= @spare.cost_center_id %></p>
+<p><b>Precio De Compra</b>: <%= @spare.purchase_price %></p>
+<p><b>Precio De Venta</b>: <%= @spare.selling_price %></p>
+<p><b>Cantidad</b>: <%= @spare.quantity %></p>
+<p><b>Iva</b>: <%= @spare.iva %></p>
+</div>

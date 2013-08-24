@@ -1,0 +1,17 @@
+<tr id=<%= "spare_#{spare.id}" %>>
+<td><%= link_to spare.id, edit_spare_path(spare), :remote => true %></td>
+<td><%= spare.description %></td>
+<td><%= spare.cost_center_id %></td>
+<td><%= spare.purchase_price %></td>
+<td><%= spare.selling_price %></td>
+<td><%= spare.quantity %></td>
+<td><%= spare.iva %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Repuesto"), spare, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Repuesto"), edit_spare_path(spare), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Repuesto"), spare,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

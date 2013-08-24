@@ -1,0 +1,67 @@
+<%= link_to "Ar Motrix", root_path, :class => 'brand' %>
+<ul class="nav">
+  <% if not user_signed_in? %>
+    <li class="active">
+    <%= link_to 'Iniciar Sesión', new_user_session_path %>
+    </li>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <li class="clientes">
+    <%= link_to 'Clientes', customers_path %>
+    </li>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <li class="documents">
+    <%= link_to 'Documentos', documents_path %>
+    </li>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <li class="documents">
+    <%= link_to 'Perfiles', profiles_path %>
+    </li>
+  <% end %>
+
+
+  <% if user_signed_in? %>
+    <li class="documents">
+    <%= link_to 'Usuarios', users_path %>
+    </li>
+  <% end %>
+
+
+  <% if user_signed_in? %>
+    <li class="documents">
+    <%= link_to 'Proveedores', suppliers_path %>
+    </li>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <li class="documents">
+    <%= link_to 'Orden de trabajo', work_orders_path %>
+    </li>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <li class="editar">
+    <%= link_to 'Editar Cuenta', edit_user_registration_path %>
+    </li>
+    <% if current_user.has_role? :admin %>
+      <li>
+      <%= link_to 'Admin', users_path %>
+      </li>
+    <% end %>
+  <% else %>
+    <li>
+    <%= link_to 'Registrarse', new_user_registration_path %>
+    </li>
+  <% end %>
+
+    <% if user_signed_in? %>
+    <li class="sesion">
+    <%= link_to 'Cerrar Sesión', destroy_user_session_path, :method=>'delete' %>
+    </li>
+    <% end %>
+</ul>

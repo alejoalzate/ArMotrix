@@ -1,0 +1,19 @@
+<%= simple_form_for(@shopping, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @shopping %>
+
+  <%= f.input :supplier %>
+  <%= f.input :date %>
+  <%= f.input :state %>
+  <%= f.input :vendor_invoice %>
+  <%= f.input :concept %>
+  <%= f.input :value %>
+  <%= f.input :quantity %>
+  <%= f.input :iva %>
+  <%= f.input :discount %>
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', shoppings_path, :class => 'btn btn-small' %>
+  </div>
+<% end %>

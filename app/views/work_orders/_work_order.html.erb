@@ -1,0 +1,23 @@
+<tr id=<%= "work_order_#{work_order.id}" %>>
+<td><%= link_to work_order.id, edit_work_order_path(work_order), :remote => true %></td>
+<td><%= work_order.address %></td>
+<td><%= work_order.plate %></td>
+<td><%= work_order.movil %></td>
+<td><%= work_order.brand %></td>
+<td><%= work_order.date_received %></td>
+<td><%= work_order.type %></td>
+<td><%= work_order.delivery_date %></td>
+<td><%= work_order.color %></td>
+<td><%= work_order.mileage %></td>
+<td><%= work_order.expiration_date %></td>
+<td><%= work_order.vehicle %></td>
+<td><%= work_order.state %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Orden"), work_order, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Orden"), edit_work_order_path(work_order), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Orden"), work_order,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

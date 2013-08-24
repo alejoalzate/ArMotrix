@@ -1,0 +1,88 @@
+<% if user_signed_in? %>
+  <p class="userlogin">User: <%= current_user.name %></p>
+<% end %>
+<br>
+<p class="img-rounded" style="text-align: center;"><%= image_tag('Header.png', :class => 'img-rounded', :id => 'image') %></p>
+<br>
+  <div class="well well-large" class="home">
+     <p>
+        <h1 class="titulo"><u>Bienvenido a A.R. MOTRIX</u></h1>
+               
+	        <p class="lead">Este es un Software especialmente diseñado para administrar talleres de reparación automotriz.
+                 
+            Es una sencilla,completa y poderosa herramienta que permite controlar de una manera muy fácil y eficiente toda la administración del taller, eliminado así la necesidad de invertir mucho tiempo en tareas tediosas para poder dedicarlo a actividades verdaderamente productivas.</p>
+    </p>
+        </div>
+
+    <br><br>
+    <% if not current_user %>
+    	<li class="btn btn-primary" style="margin-left: 6px;
+">
+    		<%= link_to 'Iniciar Sesión', new_user_session_path, :class => "iniciar" %>
+    	</li>    
+    <% end %>
+  
+  
+ <br><br>   
+ <div class="well well-large">
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://blog.cochesalaventa.com/_fotos/Officially-Official-New-BRABUS-R230_-730-hp-2009-Mercedes-Benz-SL_25150_2.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://images02.olx.com.pe/ui/20/61/17/1338325067_81205417_4-OFERTAS-ESPECTACULARES-Autos-motos-y-barcos.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://varyedades.com/wp-content/uploads/2009/06/bugatti3.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://www.super-autos.net/j/jaguar-xj-75-platinum-concept-01.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://1.bp.blogspot.com/_nRoUHcEL-rk/S-HiBUJkMZI/AAAAAAAAAD8/wfpgYmCOzZ0/s1600/961522nissan%252520350z%252520modified%252520tuning%252520auto%252520carros%252520cars%252520800%252520x%252520559.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://2.bp.blogspot.com/-k3bqJgXwU3I/TdXPcLgkRTI/AAAAAAAAABM/UqimIi9Y2nI/s1600/0IfVNpZXOch2.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://4.bp.blogspot.com/_gkbxdXtryOg/Sm5eqyk8CJI/AAAAAAAAABA/Flxk7s-Op68/s400/663fc336AMV12Vantage-6007p.jpg" width="100" />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<img height="80" onmouseout="this.width=100;this.height=80;" onmouseover="this.width=200;this.height=100;" src="http://www.speedfan.biz/portal//images/stories/35/16736.jpg" width="100" />
+
+
+
+
+
+
+
+        </div>
+ <center>
+<hr>
+<ul class="nav">
+    <li class="lead" style="float:left; margin-left: 400px; font-size: 16px;
+">
+    <u><%= link_to 'Iniciar Sesión', new_user_session_path %></u>
+    </li>
+      <li class="lead" style="margin-left: 540px;
+  position: absolute; font-size: 16px;
+">
+      <u><%= link_to 'Admin', users_path %></u>
+      </li>
+    <li class="lead" style="margin-left: 625px;
+  position: absolute; font-size: 16px;
+">
+    <u><%= link_to 'Registrarse', new_user_registration_path %></u>
+    </li>
+</ul>
+
+<hr>
+</center>
+
+

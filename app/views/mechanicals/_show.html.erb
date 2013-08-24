@@ -1,0 +1,13 @@
+<%- model_class = Mechanical -%>
+<div class="page-header">
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+<div class='mechanical'>
+<p><%= @mechanical.id %></p>
+<p><%= @mechanical.document_id %></p>
+<p><%= @mechanical.name %></p>
+<p><%= @mechanical.surname %></p>
+<p><%= @mechanical.work %></p>
+<p><%= @mechanical.type %></p>
+<p><%= @mechanical.state %></p>
+</div>

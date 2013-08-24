@@ -1,0 +1,20 @@
+<tr id=<%= "shopping_#{shopping.id}" %>>
+<td><%= link_to shopping.id, edit_shopping_path(shopping), :remote => true %></td>
+<td><%= shopping.supplier %></td>
+<td><%= shopping.date %></td>
+<td><%= shopping.state %></td>
+<td><%= shopping.vendor_invoice %></td>
+<td><%= shopping.concept %></td>
+<td><%= shopping.value %></td>
+<td><%= shopping.quantity %></td>
+<td><%= shopping.iva %></td>
+<td><%= shopping.discount %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Compra"), shopping, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Compra"), edit_shopping_path(shopping), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Compra"), shopping,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

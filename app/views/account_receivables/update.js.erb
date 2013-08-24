@@ -1,0 +1,2 @@
+$('tr#account_receivable_<%= @account_receivable.id %>').replaceWith("<%= escape_javascript(render @account_receivable) %>")
+$.lazybox.close()

@@ -1,0 +1,14 @@
+<%- model_class = Labor -%>
+<div class="page-header">
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+<div class='labor'>
+<p><b>Numero</b>: <%= @labor.id %></p>
+<p><b>Descripción</b>: <%= @labor.description %></p>
+<p><b>Centro De Costo</b>: <%= @labor.cost_center_id %></p>
+<p><b>Precio De Venta</b>: <%= @labor.sale_price %></p>
+<p><b>Cantidad</b>: <%= @labor.quantity %></p>
+<p><b>Mecanico</b>: <%= @labor.mechanical_id %></p>
+<p><b>Iva</b>: <%= @labor.iva %></p>
+<p><b>Descuento</b>: <%= @labor.discount %></p>
+</div>

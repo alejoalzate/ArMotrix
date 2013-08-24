@@ -1,0 +1,13 @@
+<%= simple_form_for(@history_of_vehicle, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+	<%= f.error_notification %>
+	<%= display_base_errors @history_of_vehicle %>
+
+  <%= f.input :plate %>
+  <%= f.input :customer %>
+  <%= f.input :date %>
+	<div class="form-actions">
+		<%= f.submit "guardar", :class => 'btn btn-primary' %>
+		<%= link_to 'Atras', history_of_vehicles_path, :class => 'btn btn-small' %>
+	</div>
+<% end %>

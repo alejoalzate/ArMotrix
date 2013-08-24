@@ -1,0 +1,22 @@
+<%= simple_form_for(@cash_receipt, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @cash_receipt %>
+
+  <%= f.input :date %>
+  <%= f.input :observations %>
+  <%= f.input :state %>
+  <%= f.input :retention %>
+  <%= f.input :customer %>
+  <%= f.input :concept %>
+  <%= f.input :movement_number %>
+  <%= f.input :value %>
+  <%= f.input :payment_id %>
+  <%= f.input :bank_origin_id %>
+  <%= f.input :destination_bank_id %>
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <%= link_to 'Atras', cash_receipts_path, :class => 'btn btn-small' %>
+  </div>
+<% end %>
+

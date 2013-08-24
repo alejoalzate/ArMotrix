@@ -1,0 +1,17 @@
+<tr id=<%= "mechanical_#{mechanical.id}" %>>
+<td><%= link_to mechanical.id, edit_mechanical_path(mechanical), :remote => true %></td>
+<td><%= mechanical.document_id %></td>
+<td><%= mechanical.name %></td>
+<td><%= mechanical.surname %></td>
+<td><%= mechanical.work %></td>
+<td><%= mechanical.type %></td>
+<td><%= mechanical.state %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Mecanico"),  mechanical, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Mecanico"),  edit_mechanical_path(mechanical), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Mecanico"),  mechanical,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

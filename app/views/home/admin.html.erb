@@ -1,0 +1,113 @@
+<div id='admin' class="page-header">
+  <h3 class="fondo">Administración </h3>
+</div>
+
+<div id='tab' class="well">
+
+    <table id='tab'  class="table table-hover">
+      <thead>
+        <tr>
+          <th>Maestra</th>
+         
+          <th>Descripción</th>
+          <th><%= link_to image_tag("home.png "), root_path, :class => 'brand' %></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+            <td><%= link_to image_tag("Pagar.png"), account_payables_path, :rel => "tooltip", :title => "Cuentas por pagar"  %>&nbsp&nbsp<%= link_to "Cuentas por pagar", account_payables_path %></td>
+            <td>Cualquier importe de una parte deudora, que aparece como resultado de una compra de bienes o servicios</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Cobrar.png"), account_receivables_path, :rel => "tooltip", :title => "Cuentas por cobrar"  %>&nbsp&nbsp<%= link_to "Cuentas por cobrar", account_receivables_path %></td>
+            <td>Registra los aumentos y las disminuciones derivados de la venta de conceptos distintos a mercancías</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Banco.png"), banks_path, :rel => "tooltip", :title => "Bancos"  %>&nbsp&nbsp<%= link_to "Bancos", banks_path %></td>
+            <td>Empresa financiera que se encarga de captar recursos en la forma de depósitos</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Cobro.png"), cash_receipts_path, :rel => "tooltip", :title => "Cobros"  %>&nbsp&nbsp<%= link_to "Cobros", cash_receipts_path %></td>
+            <td>Cobranza recaudación de dinero como pago de un trabajo, venta o deuda un cobro a través del banco</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Centro.png"), cost_centers_path, :rel => "tooltip", :title => "Centros de costos"  %>&nbsp&nbsp<%= link_to "Centros de costos", cost_centers_path %></td>
+            <td>División que genera costos para la organización, pero sólo indirectamente le añaden beneficio o utilidad</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Cliente.png"), customers_path, :rel => "tooltip", :title => "Clientes"  %>&nbsp&nbsp<%= link_to "Clientes", customers_path %></td>
+            <td>Persona o empresa receptora de un bien, servicio, producto o idea, a cambio de dinero u otro artículo de valor</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Documento.png"), documents_path, :rel => "tooltip", :title => "Documentos"  %>&nbsp&nbsp<%= link_to "Documentos", documents_path %></td>
+            <td>Documento público que contiene datos de identificación personal</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Pago.png"), form_of_payments_path, :rel => "tooltip", :title => "Formas de pago"  %>&nbsp&nbsp<%= link_to "Formas de pago", form_of_payments_path %></td>
+            <td>Modos de extinguir las obligaciones que consiste en el cumplimiento efectivo de la prestación debida</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Vehiculos.png"), history_of_vehicles_path, :rel => "tooltip", :title => "Historial de vehículos"  %>&nbsp&nbsp<%= link_to "Historial de vehículos", history_of_vehicles_path %></td>
+            <td>Reseña circunstanciada de los antecedentes de un vehiculo</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Labor.png"), labors_path, :rel => "tooltip", :title => "Labores"  %>&nbsp&nbsp<%= link_to "Labores", labors_path %></td>
+            <td>Toda actividad humana social y libre, ya sea material o intelectual, permanente o transitoria</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Mecanico.png"), mechanicals_path, :rel => "tooltip", :title => "Mecanicos"  %>&nbsp&nbsp<%= link_to "Mecanicos", mechanicals_path %></td>
+            <td>Profesionales que se ocupan de la construcción de equipos industriales,  así como de su montaje y de su mantenimiento.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Perfil.png"), profiles_path, :rel => "tooltip", :title => "Perfiles"  %>&nbsp&nbsp<%= link_to "Perfiles", documents_path %></td>
+            <td>Conjunto de rasgos peculiares que un puesto de trabajo</td>
+            <td></td>
+        </tr>
+                <tr>
+            <td><%= link_to image_tag("Documento.png"), sale_by_cost_centers_path, :rel => "tooltip", :title => "Venta por centros de costos"  %>&nbsp&nbsp<%= link_to "Venta por centros de costos", sale_by_cost_centers_path %></td>
+            <td>División que genera costos para la organización, pero sólo indirectamente le añaden beneficio o utilidad</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Compra.png"), shoppings_path, :rel => "tooltip", :title => "Compras"  %>&nbsp&nbsp<%= link_to "Compras", shoppings_path %></td>
+            <td>Adquisición u obtención de algo a cambio de un precio</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Repuesto.png"), spares_path, :rel => "tooltip", :title => "Repuestos"  %>&nbsp&nbsp<%= link_to "Repuestos", spares_path %></td>
+            <td>Pieza que se utiliza para reemplazar las originales en máquinas</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Proveedor.png"), suppliers_path, :rel => "tooltip", :title => "Proveedores"  %>&nbsp&nbsp<%= link_to "Proveedores", suppliers_path %></td>
+            <td>Es una entidad o persona que presta servicios a otras entidades</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Usuario.png"), users_path, :rel => "tooltip", :title => "Usuarios"  %>&nbsp&nbsp<%= link_to "Usuarios", users_path %></td>
+            <td>Es un individuo consumidor, que utiliza un servicio, por lo general es una única persona</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= link_to image_tag("Orden.png"), work_orders_path, :rel => "tooltip", :title => "Orden De Trabajo"  %>&nbsp&nbsp<%= link_to "Orden De Trabajo", work_orders_path %></td>
+            <td>Documento escrito que la empresa le entrega a la persona que corresponda</td>
+            <td></td>
+        </tr>
+      
+      
+      </tbody>
+
+    </table>
+</div>

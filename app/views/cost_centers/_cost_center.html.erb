@@ -1,0 +1,14 @@
+<tr id=<%= "cost_center_#{cost_center.id}" %>>
+<td><%= link_to cost_center.id, edit_cost_center_path(cost_center), :remote => true %></td>
+<td><%= cost_center.cost_center %></td>
+<td><%= cost_center.code %></td>
+<td><%= cost_center.state %></td>
+<td>
+<%= link_to image_tag('shows.png', :title  => "Mostrar Centro"), cost_center, :remote => true, :class => 'btn btn-mini' %>
+<%= link_to image_tag('editar.png', :title  => "Editar Centro"), edit_cost_center_path(cost_center), :remote => true,
+:class => 'btn btn-mini' %>
+<%= link_to image_tag('deletes.png', :title  => "Eliminar Centro"), cost_center,
+:data => { :confirm => 'Esta Seguro?' },
+:method => :delete, :remote => true, :class => 'btn btn-mini btn-danger' %>
+</td>
+</tr>

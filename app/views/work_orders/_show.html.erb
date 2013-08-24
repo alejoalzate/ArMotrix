@@ -1,0 +1,27 @@
+<%- model_class = WorkOrder -%>
+<div class="page-header">
+<h1>Orden De Trabajo</h1>
+</div>
+<div class='work_order'>
+<p><b>Numero</b>: <%= @work_order.id %></p>
+<p><b>Documento</b>: <%= @work_order.document_id %></p>
+<p><b>Dirección</b>: <%= @work_order.address %></p>
+<p><b>Placa</b>: <%= @work_order.plate %></p>
+<p><b>Telefono</b>: <%= @work_order.phone %></p>
+<p><b>Celular</b>: <%= @work_order.movil %></p>
+<p><b>Marca</b>: <%= @work_order.brand %></p>
+<p><b>Fecha Recibido</b>: <%= @work_order.date_received %></p>
+<p><b>Tipo</b>: <%= @work_order.type %></p>
+<p><b>Fecha Entrega</b>: <%= @work_order.delivery_date %></p>
+<p><b>Modelo</b>: <%= @work_order.model %></p>
+<p><b>Color</b>: <%= @work_order.color %></p>
+<p><b>Kilometraje</b>: <%= @work_order.mileage %></p>
+<p><b>Fecha Expiración</b>: <%= @work_order.expiration_date %></p>
+<p><b>Vehiculo</b>: <%= @work_order.vehicle %></p>
+<p><b>Rombo</b>: <%= @work_order.diamond %></p>
+<p><b>Estado</b>: <%= @work_order.state %></p>
+<p><b>Inventario</b>: <%= @work_order.inventory_id %></p>
+<p><b>Trabajo Total</b>: <%= @work_order.total_labor %></p>
+<p><b>Piezas valor total</b>: <%= @work_order.parts_total_value %></p>
+<p><b>Retroalimentación Cliente</b>: <%= @work_order.client_feedback %></p>
+</div>
